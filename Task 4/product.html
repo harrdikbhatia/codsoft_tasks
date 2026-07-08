@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sterling Silver Pendant | AURA</title>
+    <meta name="description" content="Shop the Sterling Silver Pendant at AURA.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar (Reused) -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+            
+            <a href="index.html" class="logo">
+                <h1>AURA</h1>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#collections" class="active">Collections</a>
+                <a href="index.html#about">About Us</a>
+            </nav>
+
+            <div class="nav-icons">
+                <button aria-label="Search" id="nav-search-btn"><i class="ph ph-magnifying-glass"></i></button>
+                <button aria-label="Wishlist" id="nav-wishlist-btn" style="position: relative;">
+                    <i class="ph ph-heart"></i>
+                    <span class="cart-count" id="wishlist-badge" style="display: none; background-color: var(--clr-rose);">0</span>
+                </button>
+                <button aria-label="Cart" id="nav-cart-btn">
+                    <i class="ph ph-shopping-bag"></i>
+                    <span class="cart-count" id="cart-badge">0</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Nav Menu -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <h2>Menu</h2>
+                <button class="close-menu" id="close-menu"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#collections">Collections</a>
+                <a href="index.html#about">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> / 
+        <a href="index.html#collections">Collections</a> / 
+        <a href="#">Silver</a> / 
+        <span>Sterling Silver Pendant</span>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img id="main-product-img" src="images/silver_pendant.png" alt="Sterling Silver Pendant">
+            </div>
+            <div class="thumbnail-list">
+                <div class="thumb-wrapper active"><img class="thumbnail" src="images/silver_pendant.png" alt="Thumbnail 1" style="transform: scaleX(1);"></div>
+                <div class="thumb-wrapper"><img class="thumbnail" src="images/silver_pendant.png" alt="Thumbnail 2" style="transform: scaleX(-1);"></div>
+                <div class="thumb-wrapper"><img class="thumbnail" src="images/silver_pendant.png" alt="Thumbnail 3" style="transform: scale(1.5) translateY(10%);"></div>
+            </div>
+        </div>
+        
+        <div class="product-info-panel">
+            <h1 class="product-title">Sterling Silver Pendant</h1>
+            
+            <div class="product-reviews-summary">
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star-half"></i>
+                </div>
+                <span>(128 Reviews)</span>
+            </div>
+
+            <p class="product-price-large">₹9,999</p>
+            
+            <p class="product-desc">
+                Elevate your everyday style with our signature Sterling Silver Pendant. Carefully crafted to catch the light from every angle, this timeless piece is a staple for any jewelry collection.
+            </p>
+            
+
+            <div class="product-actions-panel">
+                <div class="quantity-selector">
+                    <button id="qty-minus"><i class="ph ph-minus"></i></button>
+                    <input type="number" id="qty-input" value="1" min="1">
+                    <button id="qty-plus"><i class="ph ph-plus"></i></button>
+                </div>
+                <button class="btn btn-primary btn-block">Add to Cart</button>
+                <button class="btn btn-outline icon-btn"><i class="ph ph-heart"></i></button>
+            </div>
+            
+            <!-- Accordions for Specs -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Product Specifications</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Material:</strong> 925 Sterling Silver</li>
+                            <li><strong>Stone:</strong> AAAA Grade Cubic Zirconia</li>
+                            <li><strong>Chain Length:</strong> 16" with 2" extender</li>
+                            <li><strong>Weight:</strong> 4.2g</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Shipping & Returns</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Shipping charges are fully included in the product price. Returns accepted within 30 days of purchase in original packaging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Bought Together -->
+    <section class="cross-sell-section">
+        <h2>Frequently Bought Together</h2>
+        <div class="bought-together-container">
+            <div class="bt-item">
+                <img src="images/silver_pendant.png" alt="Pendant">
+                <p>This Item</p>
+            </div>
+            <i class="ph ph-plus bt-icon"></i>
+            <div class="bt-item">
+                <img src="images/silver_pendant.png" alt="Bracelet">
+                <p>Silver Chain Bracelet</p>
+                <p>₹6,499</p>
+            </div>
+            <i class="ph ph-equals bt-icon"></i>
+            <div class="bt-total">
+                <p class="total-price">₹16,498</p>
+                <button class="btn btn-primary btn-small">Add Both to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <h2>Customer Reviews</h2>
+        <div class="review-stats">
+            <div class="overall-rating">
+                <h1>4.8</h1>
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star-half"></i>
+                </div>
+                <p>Based on 128 reviews</p>
+            </div>
+            <button class="btn btn-outline">Write a Review</button>
+        </div>
+        <div class="reviews-list" id="dynamic-reviews-list">
+            <!-- Reviews injected by JS -->
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="section-header">
+            <h2>You May Also Like</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/silver_pendant.png" alt="Earrings">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Silver Collection</span>
+                    <a href="#" class="product-name">Classic Silver Studs</a>
+                    <span class="product-price">₹4,999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/silver_pendant.png" alt="Bracelet">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Silver Collection</span>
+                    <a href="#" class="product-name">Silver Tennis Bracelet</a>
+                    <span class="product-price">₹8,999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/silver_pendant.png" alt="Ring">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Silver Collection</span>
+                    <a href="#" class="product-name">Eternity Band</a>
+                    <span class="product-price">₹6,499</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Reused) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>AURA</h2>
+                <p>Curating exceptional fine jewellery that blends timeless elegance with modern craftsmanship.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="index.html?filter=silver#collections">Silver Jewellery</a></li>
+                    <li><a href="index.html?filter=gold#collections">Solid Gold</a></li>
+                    <li><a href="index.html?filter=diamond#collections">Natural Diamonds</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('shipping')">Shipping & Returns</a></li>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('care')">Jewellery Care</a></li>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('faq')">FAQ</a></li>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('track')">Track Order</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Subscribe for exclusive offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit"><i class="ph ph-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 AURA Jewellery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <button class="close-search" id="close-search-btn"><i class="ph ph-x"></i></button>
+            <input type="text" id="search-input" placeholder="Search for jewellery...">
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-block">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Drawer -->
+    <div class="cart-drawer-overlay" id="checkout-drawer-overlay"></div>
+    <div class="cart-drawer" id="checkout-drawer">
+        <div class="cart-header">
+            <h2>Checkout Details</h2>
+            <button class="close-cart" id="close-checkout-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" style="padding: 20px;">
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <input type="text" id="checkout-name" placeholder="Full Name" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <input type="email" id="checkout-email" placeholder="Email Address" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <input type="tel" id="checkout-phone" placeholder="Phone Number" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                </div>
+                <div class="form-group" style="margin-bottom: 25px;">
+                    <textarea id="checkout-address" placeholder="Shipping Address" rows="3" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit; resize: none;"></textarea>
+                </div>
+
+                <div class="payment-section" style="margin-bottom: 25px; border-top: 1px solid var(--clr-light-gray); padding-top: 15px;">
+                    <h4 style="margin-bottom: 10px; color: var(--clr-black);">Payment Method</h4>
+                    <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="payment_method" value="card" checked> Card
+                        </label>
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="payment_method" value="upi"> UPI
+                        </label>
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="payment_method" value="cod"> COD
+                        </label>
+                    </div>
+                    
+                    <!-- Card Details -->
+                    <div id="payment-card-details" style="display: block;">
+                        <input type="text" id="card-num" placeholder="Card Number" style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit; margin-bottom: 10px;">
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" id="card-exp" placeholder="MM/YY" style="width: 50%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                            <input type="text" id="card-cvv" placeholder="CVV" style="width: 50%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                        </div>
+                    </div>
+                    
+                    <!-- UPI Details -->
+                    <div id="payment-upi-details" style="display: none;">
+                        <input type="text" id="upi-id" placeholder="UPI ID (e.g. name@bank)" style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="checkout-submit-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Wishlist Drawer -->
+    <div class="cart-drawer-overlay" id="wishlist-drawer-overlay"></div>
+    <div class="cart-drawer" id="wishlist-drawer">
+        <div class="cart-header">
+            <h2>Your Wishlist</h2>
+            <button class="close-cart" id="close-wishlist-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="wishlist-items-container">
+            <!-- Items injected by JS -->
+        </div>
+    </div>
+
+    <!-- Support Drawer -->
+    <div class="cart-drawer-overlay" id="support-drawer-overlay"></div>
+    <div class="cart-drawer" id="support-drawer">
+        <div class="cart-header">
+            <h2 id="support-drawer-title">Support</h2>
+            <button class="close-cart" id="close-support-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="support-content-container" style="padding: 20px; font-size: 0.95rem; line-height: 1.6;">
+            <!-- Content injected by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

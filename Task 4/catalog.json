@@ -1,0 +1,107 @@
+[
+    {
+        "id": "silver-0",
+        "name": "Sterling Pendant",
+        "category": "silver",
+        "price": "3,099",
+        "image": "images/silver_pendant.png"
+    },
+    {
+        "id": "silver-1",
+        "name": "Silver Chain Bracelet",
+        "category": "silver",
+        "price": "4,699",
+        "image": "images/silver_bracelet.png"
+    },
+    {
+        "id": "silver-2",
+        "name": "Eternity Silver Ring",
+        "category": "silver",
+        "price": "4,799",
+        "image": "images/silver_ring.png"
+    },
+    {
+        "id": "silver-3",
+        "name": "Silver Drop Earrings",
+        "category": "silver",
+        "price": "6,799",
+        "image": "images/silver_earrings.png"
+    },
+    {
+        "id": "silver-4",
+        "name": "Minimalist Silver Choker",
+        "category": "silver",
+        "price": "5,499",
+        "image": "images/silver_choker.png"
+    },
+    {
+        "id": "gold-5",
+        "name": "Gold Plated Statement Ring",
+        "category": "gold",
+        "price": "2,399",
+        "image": "images/gold_ring.png"
+    },
+    {
+        "id": "gold-6",
+        "name": "Elegant Gold Drop Earrings",
+        "category": "gold",
+        "price": "6,399",
+        "image": "images/gold_earrings.png"
+    },
+    {
+        "id": "gold-7",
+        "name": "24k Gold Chain",
+        "category": "gold",
+        "price": "6,099",
+        "image": "images/gold_chain.png"
+    },
+    {
+        "id": "gold-8",
+        "name": "Gold Solitaire Ring",
+        "category": "gold",
+        "price": "3,299",
+        "image": "images/gold_solitaire.png"
+    },
+    {
+        "id": "gold-9",
+        "name": "Vintage Gold Bangle",
+        "category": "gold",
+        "price": "4,799",
+        "image": "images/gold_bangle.png"
+    },
+    {
+        "id": "diamond-10",
+        "name": "CZ Diamond Tennis Bracelet",
+        "category": "diamond",
+        "price": "2,099",
+        "image": "images/diamond_bracelet.png"
+    },
+    {
+        "id": "diamond-11",
+        "name": "Solitaire Diamond Necklace",
+        "category": "diamond",
+        "price": "5,099",
+        "image": "images/diamond_necklace.png"
+    },
+    {
+        "id": "diamond-12",
+        "name": "Diamond Stud Earrings",
+        "category": "diamond",
+        "price": "2,099",
+        "image": "images/diamond_earrings.png"
+    },
+    {
+        "id": "diamond-13",
+        "name": "Diamond Halo Ring",
+        "category": "diamond",
+        "price": "3,699",
+        "image": "images/diamond_ring.png"
+    },
+    {
+        "id": "diamond-14",
+        "name": "Luxury Diamond Choker",
+        "category": "diamond",
+        "price": "2,699",
+        "image": "images/diamond_jewellery.png"
+    }
+]

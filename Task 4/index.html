@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Fine Jewellery</title>
+    <meta name="description" content="Discover premium fine jewellery crafted with elegance. Shop our exclusive Silver, Gold, and Diamond collections.">
+    
+    <!-- Fonts: Playfair Display (Serif) & Inter (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+            
+            <a href="index.html" class="logo">
+                <h1>AURA</h1>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About Us</a>
+            </nav>
+
+            <div class="nav-icons">
+                <button aria-label="Search" id="nav-search-btn"><i class="ph ph-magnifying-glass"></i></button>
+                <button aria-label="Wishlist" id="nav-wishlist-btn" style="position: relative;">
+                    <i class="ph ph-heart"></i>
+                    <span class="cart-count" id="wishlist-badge" style="display: none; background-color: var(--clr-rose);">0</span>
+                </button>
+                <button aria-label="Cart" id="nav-cart-btn">
+                    <i class="ph ph-shopping-bag"></i>
+                    <span class="cart-count" id="cart-badge">0</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Nav Menu -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <h2>Menu</h2>
+                <button class="close-menu" id="close-menu"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">The Signature Collection</span>
+            <h2 class="hero-title">Elegance in Every Detail</h2>
+            <p class="hero-description">Discover our masterfully crafted fine jewellery, designed to bring timeless luxury to your everyday moments.</p>
+            <a href="#collections" class="btn btn-primary">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Shop / Collections Section -->
+    <section id="collections" class="collections-section">
+        <div class="section-header">
+            <h2>Our Collections</h2>
+            <p>Curated pieces across Silver, Gold, and Diamond</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters-container">
+            <button class="filter-btn active" data-filter="all">All Pieces</button>
+            <button class="filter-btn" data-filter="silver">Silver</button>
+            <button class="filter-btn" data-filter="gold">Gold</button>
+            <button class="filter-btn" data-filter="diamond">Diamond</button>
+        </div>
+
+        <!-- Product Grid (Populated by JavaScript) -->
+        <div class="product-grid" id="product-grid">
+            
+        </div>
+    </section>
+
+    
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/aura_logo_cutout.png" alt="AURA Logo" loading="lazy">
+            </div>
+            <div class="about-text">
+                <span class="about-subtitle">Our Heritage</span>
+                <h2>Redefining Fine Elegance</h2>
+                <p>At AURA, we believe that luxury should be accessible without compromising on quality or craftsmanship. Founded with a passion for intricate details and timeless design, our collections bring you the finest in original fine jewellery.</p>
+                <p>Every piece in our Silver, Gold, and Diamond collections is meticulously crafted using solid precious metals, fine polish, and carefully selected natural stones. We strive to offer you statement pieces that not only elevate your everyday style but also capture the grandeur of traditional and contemporary art.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="ph-fill ph-gem"></i>
+                        <span>Premium Stones</span>
+                    </div>
+                    <div class="feature">
+                        <i class="ph-fill ph-medal"></i>
+                        <span>High-Quality Plating</span>
+                    </div>
+                    <div class="feature">
+                        <i class="ph-fill ph-leaf"></i>
+                        <span>Skin Friendly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="about-subtitle">Get in Touch</span>
+                <h2>Contact Us</h2>
+                <p>Have a question or need assistance with your order? Our dedicated team is here to help you experience the luxury of AURA.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="ph ph-map-pin"></i>
+                        <div>
+                            <h4>Visit Our Boutique</h4>
+                            <p>AURA Fine Jewellery<br>M-Block Market, Greater Kailash-1<br>New Delhi, Delhi 110048<br>India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ph ph-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210<br>Mon-Sat: 10:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ph ph-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@aurajewellery.in<br>support@aurajewellery.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact-subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                        <div id="form-error" style="color: #d32f2f; font-size: 0.85rem; margin-top: 5px; display: none;"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>AURA</h2>
+                <p>Curating exceptional fine jewellery that blends timeless elegance with modern craftsmanship.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="index.html?filter=silver#collections">Silver Jewellery</a></li>
+                    <li><a href="index.html?filter=gold#collections">Solid Gold</a></li>
+                    <li><a href="index.html?filter=diamond#collections">Natural Diamonds</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('shipping')">Shipping & Returns</a></li>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('care')">Jewellery Care</a></li>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('faq')">FAQ</a></li>
+                    <li><a href="javascript:void(0)" onclick="openSupportDrawer('track')">Track Order</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Subscribe for exclusive offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit"><i class="ph ph-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 AURA Jewellery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <button class="close-search" id="close-search-btn"><i class="ph ph-x"></i></button>
+            <input type="text" id="search-input" placeholder="Search for jewellery...">
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-block">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Drawer -->
+    <div class="cart-drawer-overlay" id="checkout-drawer-overlay"></div>
+    <div class="cart-drawer" id="checkout-drawer">
+        <div class="cart-header">
+            <h2>Checkout Details</h2>
+            <button class="close-cart" id="close-checkout-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" style="padding: 20px;">
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <input type="text" id="checkout-name" placeholder="Full Name" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <input type="email" id="checkout-email" placeholder="Email Address" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <input type="tel" id="checkout-phone" placeholder="Phone Number" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                </div>
+                <div class="form-group" style="margin-bottom: 25px;">
+                    <textarea id="checkout-address" placeholder="Shipping Address" rows="3" required style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit; resize: none;"></textarea>
+                </div>
+
+                <div class="payment-section" style="margin-bottom: 25px; border-top: 1px solid var(--clr-light-gray); padding-top: 15px;">
+                    <h4 style="margin-bottom: 10px; color: var(--clr-black);">Payment Method</h4>
+                    <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="payment_method" value="card" checked> Card
+                        </label>
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="payment_method" value="upi"> UPI
+                        </label>
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="payment_method" value="cod"> COD
+                        </label>
+                    </div>
+                    
+                    <!-- Card Details -->
+                    <div id="payment-card-details" style="display: block;">
+                        <input type="text" id="card-num" placeholder="Card Number" style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit; margin-bottom: 10px;">
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" id="card-exp" placeholder="MM/YY" style="width: 50%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                            <input type="text" id="card-cvv" placeholder="CVV" style="width: 50%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                        </div>
+                    </div>
+                    
+                    <!-- UPI Details -->
+                    <div id="payment-upi-details" style="display: none;">
+                        <input type="text" id="upi-id" placeholder="UPI ID (e.g. name@bank)" style="width: 100%; padding: 12px; border: 1px solid var(--clr-mid-gray); border-radius: 4px; font-family: inherit;">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="checkout-submit-btn">Place Order</button>
+            </form>
+            <div id="checkout-success" style="display: none; text-align: center; padding: 30px 10px;">
+                <i class="ph-fill ph-check-circle" style="font-size: 4rem; color: var(--clr-gold); margin-bottom: 20px;"></i>
+                <h3 style="margin-bottom: 10px; color: var(--clr-black);">Order Confirmed!</h3>
+                <p style="color: var(--clr-dark-gray); margin-bottom: 25px;">Thank you for your purchase. Your order ID is <strong id="confirmed-order-id">AURA-XXXX</strong>.</p>
+                <button class="btn btn-primary btn-block" id="track-order-btn">Track Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Drawer -->
+    <div class="cart-drawer-overlay" id="wishlist-drawer-overlay"></div>
+    <div class="cart-drawer" id="wishlist-drawer">
+        <div class="cart-header">
+            <h2>Your Wishlist</h2>
+            <button class="close-cart" id="close-wishlist-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="wishlist-items-container">
+            <!-- Items injected by JS -->
+        </div>
+    </div>
+
+    <!-- Support Drawer -->
+    <div class="cart-drawer-overlay" id="support-drawer-overlay"></div>
+    <div class="cart-drawer" id="support-drawer">
+        <div class="cart-header">
+            <h2 id="support-drawer-title">Support</h2>
+            <button class="close-cart" id="close-support-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="support-content-container" style="padding: 20px; font-size: 0.95rem; line-height: 1.6;">
+            <!-- Content injected by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
